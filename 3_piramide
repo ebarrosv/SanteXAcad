@@ -1,0 +1,8 @@
+for (let numero=1; numero <=6; numero ++){
+	let linea = '';
+
+	for (let i=1; i<=numero; i++) {
+ 		linea=linea+numero;
+	}
+	console.log(linea)
+}
