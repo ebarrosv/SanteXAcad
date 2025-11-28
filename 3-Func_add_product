@@ -1,0 +1,32 @@
+let carrito = {
+    total: 10,
+    productos: [
+        {
+            nombre: 'leche',
+            precio: 2,
+            unidades: 5
+        }
+    ]
+};
+
+function agregarProducto(nombre, precio, unidades) {
+    // 1. Creamos el nuevo producto
+    const nuevoProducto = {
+        nombre: nombre,
+        precio: precio,
+        unidades: unidades
+    };
+
+    // 2. Lo agregamos al array de productos
+    carrito.productos.push(nuevoProducto);
+
+    // 3. Actualizamos el total: sumamos (precio * unidades) del nuevo producto
+    carrito.total += precio * unidades;
+}
+
+// Ejemplos de uso:
+agregarProducto('pan', 1, 6);
+agregarProducto('huevos', 3, 2);
+agregarProducto('manzanas', 0.5, 10);
+
+console.log(carrito);
