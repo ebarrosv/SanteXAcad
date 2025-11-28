@@ -1,0 +1,9 @@
+let edad = prompt("¿Cuántos años tienes?");
+
+edad = Number(edad); // Convertimos el texto a número
+
+if (edad >= 18) {
+    console.log("¡Eres mayor de edad! Puedes conducir");
+} else {
+    console.log("Eres menor de edad, todavía no puedes conducir");
+}
