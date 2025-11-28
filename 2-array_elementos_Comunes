@@ -1,0 +1,12 @@
+function elementosComunes(array1, array2) {
+    const set2 = new Set(array2); // Convertimos array2 a Set (búsqueda ultra rápida)
+    const comunes = new Set();
+
+    for (let elemento of array1) {
+        if (set2.has(elemento)) {
+            comunes.add(elemento);
+        }
+    }
+
+    return Array.from(comunes); // Convertimos el Set de vuelta a array
+}
